@@ -261,3 +261,6 @@ nnoremap <F2> :TagbarToggle<CR>
 let g:tagbar_singleclick = 1
 "set the tags are sorted according to their order in the source file.
 let g:tagbar_sort = 0
+
+"run errchecks and lint on save
+let g:syntastic_go_checkers = ['go', 'golint', 'govet']
